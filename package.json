@@ -1,0 +1,21 @@
+{
+  "name": "veil",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Understand sensitive documents without sharing the sensitive parts. Hybrid on-device + cloud AI with Firebase AI Logic.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^13.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}

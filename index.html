@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veil — decode the fine print, share none of it</title>
+  <meta name="description" content="Veil explains medical bills, leases and insurance letters using on-device Gemini Nano to shield your private details and the cloud only when it needs more brainpower. Built on Firebase AI Logic hybrid inference." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="/" aria-label="Veil home">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M12 22c8-7 32-7 40 0v6c-8 14-32 14-40 0z" fill="none" stroke="#ffb454" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="27" r="5.5" fill="#5eead4"/><path d="M8 46c10 6 38 6 48 0" stroke="#8ab4ff" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+      <span class="brand-name">Veil</span>
+    </a>
+    <div class="status" id="status" aria-live="polite"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Understand the document.<br /><em>Keep the details.</em></h1>
+      <p>Paste a medical bill, lease or insurance letter. Your device hides every name, address and ID <strong>before</strong> anything is shared. The AI thinks about the anonymous version, then your browser puts your details back.</p>
+    </section>
+
+    <ol class="how" aria-label="How Veil works">
+      <li class="c-local"><b>1 · Shield</b><span>Your device finds names, addresses and IDs. Raw text never leaves.</span></li>
+      <li class="c-route"><b>2 · Route</b><span>Short and private stays on-device. Long documents escalate to the cloud.</span></li>
+      <li class="c-cloud"><b>3 · Reason</b><span>The AI reads only the anonymous version with placeholders.</span></li>
+      <li class="c-device"><b>4 · Restore</b><span>Your browser puts the real details back into the answer.</span></li>
+    </ol>
+
+    <div id="banner"></div>
+
+    <div class="grid">
+      <section class="panel" aria-labelledby="h-doc">
+        <header class="panel-head"><span class="step">1</span><h2 id="h-doc">Your document</h2></header>
+        <div class="panel-body" id="doc-panel"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="h-flight">
+        <header class="panel-head"><span class="step">2</span><h2 id="h-flight">What leaves your device</h2></header>
+        <div class="panel-body" id="flight-panel"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="h-result">
+        <header class="panel-head"><span class="step">3</span><h2 id="h-result">What it means</h2></header>
+        <div class="panel-body" id="result-panel"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>Built on <strong>Firebase AI Logic</strong> hybrid inference · Gemini Nano on-device · App Check · Remote Config</span>
+    <span>Education only, not legal or medical advice. Open source (Apache-2.0).</span>
+  </footer>
+  <button id="selbtn" class="selbtn" hidden>Shield selection</button>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

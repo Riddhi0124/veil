@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "ondevice_max_chars": {
+      "defaultValue": { "value": "3500" },
+      "valueType": "NUMBER",
+      "description": "Redacted documents longer than this are escalated from Gemini Nano to the cloud model."
+    },
+    "cloud_model": {
+      "defaultValue": { "value": "gemini-3.5-flash-lite" },
+      "valueType": "STRING",
+      "description": "Cloud model used for escalation and as the fallback when no on-device model exists."
+    }
+  }
+}
