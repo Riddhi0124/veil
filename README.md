@@ -1,6 +1,8 @@
 # Veil: decode the fine print, share none of it
 
 > **#BuildHybridAI 2026 · Web (Chrome) · Firebase AI Logic hybrid inference**
+>
+> **Live demo: https://veil-hybrid-ce06b.web.app** · Best in desktop Chrome with Gemini Nano. In any other browser it still works: the shield falls back to local rules and reasoning falls back to the cloud model.
 
 Medical bills, leases and insurance denials are confusing, and they are also some of the most private
 documents a person owns. The usual advice is "paste it into an AI chatbot", which means uploading your
